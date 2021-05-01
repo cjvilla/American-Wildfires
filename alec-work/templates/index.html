@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Wildfires</title>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
   />
@@ -21,6 +22,30 @@
         <h2>Sample data 1</h2>
       </div>
     </div>
+
+    <!-- adding in dropdown menu to select each state -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+            <select id="selDataset">
+            </select>
+        </div>
+      </div>
+      </div class="col-md-8">
+        </div class="chart1">
+          <div id="time-count-plot"></div>
+        </div>
+      </div>
+    </div class="col-md-8">
+      </div class="chart2">
+        <div id="time-size-plot"></div>
+      </div>
+    </div>      
+    
+    </div>
+
+    <div class ="row">
       <div class="table_image">
         <div class="thumbnails">
           <div class="col-md-8">
@@ -38,9 +63,9 @@
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-  <!-- <script src="static/app.js"></script> -->
-  <!-- <script src="../static/app.js"></script> -->
+  <!-- <script src="{{ url_for('static', filename='js/app.js') }}"></script> -->
+  <!-- <script src="../static/js/app.js"></script> -->
+  <script src="static/js/app.js"></script>
 </body>
 
 </html>
