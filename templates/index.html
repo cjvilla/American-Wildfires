@@ -18,32 +18,21 @@
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Wildfire Filters:</h5>
-          <select id="selDataset" onchange="newOption(this.value)"></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Wildfire Info</h3>
+    
+    <div class="col-xl-6">
+        <div class="card text-center hover-shadow-lg hover-translate-y-n10">
+          <div class="px-4 py-5">
+            <img src="https://www.climate.gov/sites/default/files/USdroughtmonitor-2015-07-14_1000.png" alt="...">
           </div>
-          <div id="sample-metadata" class="panel-body"></div>
+          <div class="px-4 pb-5">
+            <h5>Map</h5>
+            <p class="text-muted">This geographic map of the U.S. shows wildfire locations overtime between 1992 - 2015</p>
+          </div>
+          <div class="px-4 pb-5">
+            <a href="/map" class="btn btn-primary" role="button">Click Here to Explore Map</a>
+          </div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
-    </div>
-  </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
