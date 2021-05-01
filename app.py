@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, jsonify
+from flask import Flask, render_template, redirect, jsonify, request
 from sqlalchemy import create_engine
 import sqlite3 as lite
 import pandas as pd
@@ -27,7 +27,6 @@ def bycause():
         "type": "'bar'"
     }
     con.close()
-
     return jsonify(causes_rank)
 
 
