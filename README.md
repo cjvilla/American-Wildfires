@@ -1,1 +1,1 @@
-# Project-2
+# Exploratory Analysis of American Wildfires
