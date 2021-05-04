@@ -1,4 +1,6 @@
 from flask import Flask, render_template, redirect, jsonify, request
+import pandas as pd
+import json 
 
 app = Flask(__name__)
 
@@ -6,6 +8,20 @@ app = Flask(__name__)
 def welcome():
     # add in data variables here
     return render_template("index.html")
+
+@app.route("/Chart")
+def chartTest():
+    # add in data variables here
+    return render_template("chart.html")
+
+@app.route("/YearlyData")
+def yearly():
+    csv_path = "output/total_fires_yearly_by_state.csv"
+    fires_state_year_df = pd.read_csv(csv_path)
+    fires_state_year_df_index = fires_state_year_df.set_index(['FIRE_YEAR', 'STATE'])
+    result = fires_state_year_df_index.to_json(orient="table")
+    json_parsed = json.loads(result)
+    return json_parsed
 
 # for additional pages
 # @app.route("/api/v1.0/justice-league")
