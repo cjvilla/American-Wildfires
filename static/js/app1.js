@@ -30,12 +30,12 @@ d3.json(url).then(function(response){
         legend:{
             xachor: 'center',
             yachor: 'top',
-            y: -0.1,
+            y: -0.3,
             x: 0.4
         },
         width: 1000,
-        height: 1000
+        height: 600
     };
 
-Plotly.newPlot('plot',data,layout);
+Plotly.newPlot('bar_graph',data,layout);
 });
