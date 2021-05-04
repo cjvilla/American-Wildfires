@@ -14,12 +14,22 @@ def chartTest():
     # add in data variables here
     return render_template("chart.html")
 
-@app.route("/YearlyData")
-def yearly():
+@app.route("/YearlyDataState")
+def yearlyState():
     csv_path = "output/total_fires_yearly_by_state.csv"
     fires_state_year_df = pd.read_csv(csv_path)
     fires_state_year_df_index = fires_state_year_df.set_index(['FIRE_YEAR', 'STATE'])
     result = fires_state_year_df_index.to_json(orient="table")
+    json_parsed = json.loads(result)
+    return json_parsed
+
+
+@app.route("/YearlyDataAll")
+def yearly():
+    csv_path = "output/total_fires_yearly_by_state.csv"
+    fires_state_year_df = pd.read_csv(csv_path)
+    years_df = fires_state_year_df.groupby(["FIRE_YEAR"]).sum()
+    result = years_df.to_json(orient="table")
     json_parsed = json.loads(result)
     return json_parsed
 
