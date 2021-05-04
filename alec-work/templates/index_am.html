@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wildfires</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Wildfires Dashboard</h1>
+    </div>
+    <div class="news">
+      <div class="col-md-12">
+        <h2>Sample data 1</h2>
+      </div>
+    </div>
+
+    <!-- adding in dropdown menu to select each state -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="well">
+          <h5>State Code 1:</h5>
+            <select id="selDataset">
+            </select>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="well">
+          <h5>State Code 2:</h5>
+            <select id="selDataset2">
+            </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- </div class="chart1"> -->
+          <div id="time-count-plot"></div>
+        <!-- </div> -->
+      </div>
+      <div class="col-md-6">
+        <!-- </div class="chart2"> -->
+          <div id="time-size-plot"></div>
+        <!-- </div> -->
+      </div>      
+    </div>
+
+    <!-- <div class="row">
+      <div class="col-md-4">
+        <div class="well">
+          <h5>Select Year:</h5>
+            <select id="selDataset3">
+            </select>
+        </div>
+      </div>
+    </div> -->
+
+    <div class ="row">
+      <div class="col-md-4">
+        <!-- </div class="chart3"> -->
+          <div id="bar-count"></div>
+        <!-- </div> -->
+      </div>
+      <div class="col-md-4">
+        <!-- </div class="chart4"> -->
+          <div id="bar-size"></div>
+        <!-- </div> -->
+      </div>
+      <div class="col-md-4">
+        <!-- </div class="chart5"> -->
+          <div id="bar-avg"></div>
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <div class ="row">
+      <div class="table_image">
+        <div class="thumbnails">
+          <div class="col-md-8">
+            <h2>Sample image 1</h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Sample table 1</h2>
+            <table class="table table-striped">
+            </table>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <!-- <script src="../static/js/app.js"></script>
+  <script src="static/js/app.js"></script> -->
+</body>
+
+</html>
