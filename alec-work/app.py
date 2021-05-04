@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def welcome():
     # add in data variables here
-    return render_template("index.html")
+    return render_template("index_am.html")
 
 @app.route("/Chart")
 def chartTest():
