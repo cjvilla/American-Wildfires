@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e935a4b0e89946a0868f582e702e86b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+    <h3 alight="center" style="font-size:20px"<b><strong>Main Cause of Wildfires and their Corresponding Count Per State</strong><br>   - Please Click fire Icons for State Information.   - Icons are located in areas of each state with the most concentrated locations of wildfires<br>   - Optional map layers are provided in the stacked icon on the upper right <br>   - Zoom in and out function available</h3>
+    
+    
+            <div class="folium-map" id="map_e935a4b0e89946a0868f582e702e86b1" ></div>
+        
+</body>
+<script>    
+    
+            var map_e935a4b0e89946a0868f582e702e86b1 = L.map(
+                "map_e935a4b0e89946a0868f582e702e86b1",
+                {
+                    center: [38.0, -98.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    icon: "Fire",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8814e942155f4801aa129e96c8428a69 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var marker_6c4640bcafde45dd94eb5ac11f74821f = L.marker(
+                [38.88669, -76.9451],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_41ac211c46734658a6cac2e2f3f86ec5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6c4640bcafde45dd94eb5ac11f74821f.setIcon(icon_41ac211c46734658a6cac2e2f3f86ec5);
+        
+    
+        var popup_3c86a0a7acfe437da9507f00b55e9300 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_25f20f2338c24c09af64245b8894460b = $(`<div id="html_25f20f2338c24c09af64245b8894460b" style="width: 100.0%; height: 100.0%;">DC Miscellaneous 66</div>`)[0];
+            popup_3c86a0a7acfe437da9507f00b55e9300.setContent(html_25f20f2338c24c09af64245b8894460b);
+        
+
+        marker_6c4640bcafde45dd94eb5ac11f74821f.bindPopup(popup_3c86a0a7acfe437da9507f00b55e9300)
+        ;
+
+        
+    
+    
+            marker_6c4640bcafde45dd94eb5ac11f74821f.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1f1d24d7d904fc28eb071d9d744fb1e = L.marker(
+                [39.25, -75.41666667],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_df2d6414b75e42b4a075860b123644a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a1f1d24d7d904fc28eb071d9d744fb1e.setIcon(icon_df2d6414b75e42b4a075860b123644a9);
+        
+    
+        var popup_d38be027207c47c69fda0bdc878dc1c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_402ebd6c72a647b288f414b7fa3317f6 = $(`<div id="html_402ebd6c72a647b288f414b7fa3317f6" style="width: 100.0%; height: 100.0%;">DE Arson 171</div>`)[0];
+            popup_d38be027207c47c69fda0bdc878dc1c9.setContent(html_402ebd6c72a647b288f414b7fa3317f6);
+        
+
+        marker_a1f1d24d7d904fc28eb071d9d744fb1e.bindPopup(popup_d38be027207c47c69fda0bdc878dc1c9)
+        ;
+
+        
+    
+    
+            marker_a1f1d24d7d904fc28eb071d9d744fb1e.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8621075eceef4615886e1c02ca7ae544 = L.marker(
+                [43.34527778, -72.95333333],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_83baf59ea9404e3a98e67a2aa4a67947 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8621075eceef4615886e1c02ca7ae544.setIcon(icon_83baf59ea9404e3a98e67a2aa4a67947);
+        
+    
+        var popup_0eb80a5d4fa34abcb980ecb35fbebdd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60df941ad0dc4aa09ef2abb7f5951706 = $(`<div id="html_60df941ad0dc4aa09ef2abb7f5951706" style="width: 100.0%; height: 100.0%;">VT Arson 456</div>`)[0];
+            popup_0eb80a5d4fa34abcb980ecb35fbebdd3.setContent(html_60df941ad0dc4aa09ef2abb7f5951706);
+        
+
+        marker_8621075eceef4615886e1c02ca7ae544.bindPopup(popup_0eb80a5d4fa34abcb980ecb35fbebdd3)
+        ;
+
+        
+    
+    
+            marker_8621075eceef4615886e1c02ca7ae544.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4385897a913843fd8e36287e9180ef8d = L.marker(
+                [41.61892, -71.49163],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_fb5f3c137a984826a2c8607e3d8df1b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4385897a913843fd8e36287e9180ef8d.setIcon(icon_fb5f3c137a984826a2c8607e3d8df1b3);
+        
+    
+        var popup_0fdbf87a80bf4ed7a3d64f238d2a37b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38eb4d09aaf5452c858aa36c6a961c38 = $(`<div id="html_38eb4d09aaf5452c858aa36c6a961c38" style="width: 100.0%; height: 100.0%;">RI Campfire 480</div>`)[0];
+            popup_0fdbf87a80bf4ed7a3d64f238d2a37b0.setContent(html_38eb4d09aaf5452c858aa36c6a961c38);
+        
+
+        marker_4385897a913843fd8e36287e9180ef8d.bindPopup(popup_0fdbf87a80bf4ed7a3d64f238d2a37b0)
+        ;
+
+        
+    
+    
+            marker_4385897a913843fd8e36287e9180ef8d.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3c48e15884b473bbf345eb734971ccc = L.marker(
+                [39.03166667, -86.175],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_7746d0ac7c76448ba866841106c879a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c3c48e15884b473bbf345eb734971ccc.setIcon(icon_7746d0ac7c76448ba866841106c879a7);
+        
+    
+        var popup_52fa332930b74a83bab3299dc66fe352 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4eea2e77c254cc79a5c13df2cdab310 = $(`<div id="html_d4eea2e77c254cc79a5c13df2cdab310" style="width: 100.0%; height: 100.0%;">IN Arson 2098</div>`)[0];
+            popup_52fa332930b74a83bab3299dc66fe352.setContent(html_d4eea2e77c254cc79a5c13df2cdab310);
+        
+
+        marker_c3c48e15884b473bbf345eb734971ccc.bindPopup(popup_52fa332930b74a83bab3299dc66fe352)
+        ;
+
+        
+    
+    
+            marker_c3c48e15884b473bbf345eb734971ccc.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04febd2a7a1649fe965aedf1017e3765 = L.marker(
+                [37.26222222, -88.63],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_c13a55d4a4634750a58818466a27b980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_04febd2a7a1649fe965aedf1017e3765.setIcon(icon_c13a55d4a4634750a58818466a27b980);
+        
+    
+        var popup_a1e8bf2227d446dbb4011f17f055f437 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f33c8736476540af967fa0b2188fec3c = $(`<div id="html_f33c8736476540af967fa0b2188fec3c" style="width: 100.0%; height: 100.0%;">IL Campfire 2327</div>`)[0];
+            popup_a1e8bf2227d446dbb4011f17f055f437.setContent(html_f33c8736476540af967fa0b2188fec3c);
+        
+
+        marker_04febd2a7a1649fe965aedf1017e3765.bindPopup(popup_a1e8bf2227d446dbb4011f17f055f437)
+        ;
+
+        
+    
+    
+            marker_04febd2a7a1649fe965aedf1017e3765.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_064f04bdc68345a598ff8eee0eba28a6 = L.marker(
+                [44.08333333, -71.45],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_80dd5b9394c34e5eab3e55de84ce432e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_064f04bdc68345a598ff8eee0eba28a6.setIcon(icon_80dd5b9394c34e5eab3e55de84ce432e);
+        
+    
+        var popup_ca699e2a82704132bd966ef3a19ddc93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5c03d4e9fd414eb4a326b18dff570ff1 = $(`<div id="html_5c03d4e9fd414eb4a326b18dff570ff1" style="width: 100.0%; height: 100.0%;">NH Miscellaneous 2452</div>`)[0];
+            popup_ca699e2a82704132bd966ef3a19ddc93.setContent(html_5c03d4e9fd414eb4a326b18dff570ff1);
+        
+
+        marker_064f04bdc68345a598ff8eee0eba28a6.bindPopup(popup_ca699e2a82704132bd966ef3a19ddc93)
+        ;
+
+        
+    
+    
+            marker_064f04bdc68345a598ff8eee0eba28a6.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_115cc2c65df444149bdf30626172cbec = L.marker(
+                [41.9048, -69.9789],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_4153199f890c476bb98a981b8083853a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_115cc2c65df444149bdf30626172cbec.setIcon(icon_4153199f890c476bb98a981b8083853a);
+        
+    
+        var popup_4cfbff62ad644474a03f3803ddae0aa0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c044b19f9af64a07bee1adfd0712e318 = $(`<div id="html_c044b19f9af64a07bee1adfd0712e318" style="width: 100.0%; height: 100.0%;">MA Arson 2626</div>`)[0];
+            popup_4cfbff62ad644474a03f3803ddae0aa0.setContent(html_c044b19f9af64a07bee1adfd0712e318);
+        
+
+        marker_115cc2c65df444149bdf30626172cbec.bindPopup(popup_4cfbff62ad644474a03f3803ddae0aa0)
+        ;
+
+        
+    
+    
+            marker_115cc2c65df444149bdf30626172cbec.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40ef36037a9b4d9899d9e6722d2c63ac = L.marker(
+                [38.70666667, -82.66972222],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_a4049d3de01a490297ae398cd351665c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_40ef36037a9b4d9899d9e6722d2c63ac.setIcon(icon_a4049d3de01a490297ae398cd351665c);
+        
+    
+        var popup_d6cdf72d83424c95831f0e0c914e8e93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a7a30490a8e4c139db6f83b1daf8afe = $(`<div id="html_3a7a30490a8e4c139db6f83b1daf8afe" style="width: 100.0%; height: 100.0%;">OH Equipment Use 3479</div>`)[0];
+            popup_d6cdf72d83424c95831f0e0c914e8e93.setContent(html_3a7a30490a8e4c139db6f83b1daf8afe);
+        
+
+        marker_40ef36037a9b4d9899d9e6722d2c63ac.bindPopup(popup_d6cdf72d83424c95831f0e0c914e8e93)
+        ;
+
+        
+    
+    
+            marker_40ef36037a9b4d9899d9e6722d2c63ac.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96c7410a61c148b5b5f6de2f28a1af89 = L.marker(
+                [38.68277, -77.09828],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_00034fff922145159da7898a86d997a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_96c7410a61c148b5b5f6de2f28a1af89.setIcon(icon_00034fff922145159da7898a86d997a1);
+        
+    
+        var popup_daec4e5fd90b4052aa997b01968d10a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33169d5261ad44e699dd881d14f0eeb0 = $(`<div id="html_33169d5261ad44e699dd881d14f0eeb0" style="width: 100.0%; height: 100.0%;">MD Miscellaneous 3622</div>`)[0];
+            popup_daec4e5fd90b4052aa997b01968d10a9.setContent(html_33169d5261ad44e699dd881d14f0eeb0);
+        
+
+        marker_96c7410a61c148b5b5f6de2f28a1af89.bindPopup(popup_daec4e5fd90b4052aa997b01968d10a9)
+        ;
+
+        
+    
+    
+            marker_96c7410a61c148b5b5f6de2f28a1af89.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21b7f88b9932434b8ad9fcea769ba6c5 = L.marker(
+                [42.1167, -96.367],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_c52c1782b58c4cf48ab2eac18d3a2cbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_21b7f88b9932434b8ad9fcea769ba6c5.setIcon(icon_c52c1782b58c4cf48ab2eac18d3a2cbb);
+        
+    
+        var popup_b9ba623fed354fdf845c44a2e902c1fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f76394a797124a9b80d01049f5029007 = $(`<div id="html_f76394a797124a9b80d01049f5029007" style="width: 100.0%; height: 100.0%;">IA Debris Burning 4134</div>`)[0];
+            popup_b9ba623fed354fdf845c44a2e902c1fd.setContent(html_f76394a797124a9b80d01049f5029007);
+        
+
+        marker_21b7f88b9932434b8ad9fcea769ba6c5.bindPopup(popup_b9ba623fed354fdf845c44a2e902c1fd)
+        ;
+
+        
+    
+    
+            marker_21b7f88b9932434b8ad9fcea769ba6c5.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04f53f6056ba4a028d69858d1fd57c47 = L.marker(
+                [41.9233, -73.35331],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_a543a4668394441bb868e26ced320f2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_04f53f6056ba4a028d69858d1fd57c47.setIcon(icon_a543a4668394441bb868e26ced320f2d);
+        
+    
+        var popup_7fe1982ea25f4a3ea4fd6e92efd2dc7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbdea9003d824f54abd581559383654c = $(`<div id="html_bbdea9003d824f54abd581559383654c" style="width: 100.0%; height: 100.0%;">CT Miscellaneous 4976</div>`)[0];
+            popup_7fe1982ea25f4a3ea4fd6e92efd2dc7a.setContent(html_bbdea9003d824f54abd581559383654c);
+        
+
+        marker_04f53f6056ba4a028d69858d1fd57c47.bindPopup(popup_7fe1982ea25f4a3ea4fd6e92efd2dc7a)
+        ;
+
+        
+    
+    
+            marker_04f53f6056ba4a028d69858d1fd57c47.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f20a8de8a9b8490e864b29bc6997a059 = L.marker(
+                [37.08805556, -101.63694444],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_938e40de2ec74d3daa6a02a35f077b7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f20a8de8a9b8490e864b29bc6997a059.setIcon(icon_938e40de2ec74d3daa6a02a35f077b7c);
+        
+    
+        var popup_23677d3caf9f4e60a341a3b0e6644aec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd6a5ebad7d94842bf4d98971f44cdb6 = $(`<div id="html_bd6a5ebad7d94842bf4d98971f44cdb6" style="width: 100.0%; height: 100.0%;">KS Smoking 7673</div>`)[0];
+            popup_23677d3caf9f4e60a341a3b0e6644aec.setContent(html_bd6a5ebad7d94842bf4d98971f44cdb6);
+        
+
+        marker_f20a8de8a9b8490e864b29bc6997a059.bindPopup(popup_23677d3caf9f4e60a341a3b0e6644aec)
+        ;
+
+        
+    
+    
+            marker_f20a8de8a9b8490e864b29bc6997a059.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80da750185a74d26804080c53b5e92ee = L.marker(
+                [42.98361111, -104.02555556],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_f5bc7b1cb8c94af5abcb4fefc8ed9756 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_80da750185a74d26804080c53b5e92ee.setIcon(icon_f5bc7b1cb8c94af5abcb4fefc8ed9756);
+        
+    
+        var popup_f94f6def0b3a43b99d7f86e17ffbc132 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc4a39320c3d4c4e878078f7a668518b = $(`<div id="html_bc4a39320c3d4c4e878078f7a668518b" style="width: 100.0%; height: 100.0%;">NE Lightning 7973</div>`)[0];
+            popup_f94f6def0b3a43b99d7f86e17ffbc132.setContent(html_bc4a39320c3d4c4e878078f7a668518b);
+        
+
+        marker_80da750185a74d26804080c53b5e92ee.bindPopup(popup_f94f6def0b3a43b99d7f86e17ffbc132)
+        ;
+
+        
+    
+    
+            marker_80da750185a74d26804080c53b5e92ee.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f2ae3cf68864bf2a7ebb377de1b881c = L.marker(
+                [41.41555556, -78.90722222],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_1547274aad5b4d10aac777530c9a75a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0f2ae3cf68864bf2a7ebb377de1b881c.setIcon(icon_1547274aad5b4d10aac777530c9a75a0);
+        
+    
+        var popup_536a27bc2a4d47a4a20bceb75cab816b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_572208c4c09d432a954787b2655ea47b = $(`<div id="html_572208c4c09d432a954787b2655ea47b" style="width: 100.0%; height: 100.0%;">PA Equipment Use 8712</div>`)[0];
+            popup_536a27bc2a4d47a4a20bceb75cab816b.setContent(html_572208c4c09d432a954787b2655ea47b);
+        
+
+        marker_0f2ae3cf68864bf2a7ebb377de1b881c.bindPopup(popup_536a27bc2a4d47a4a20bceb75cab816b)
+        ;
+
+        
+    
+    
+            marker_0f2ae3cf68864bf2a7ebb377de1b881c.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0027b5ab6bf4bea87de96c6618b5a43 = L.marker(
+                [20.7617, -156.2453],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_84258c73ec264d85a342266213b10ce0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f0027b5ab6bf4bea87de96c6618b5a43.setIcon(icon_84258c73ec264d85a342266213b10ce0);
+        
+    
+        var popup_cc51f921b4094aae8adcac0af95e6472 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4612b35a3e4240e98002914d3fd6db23 = $(`<div id="html_4612b35a3e4240e98002914d3fd6db23" style="width: 100.0%; height: 100.0%;">HI Miscellaneous 9895</div>`)[0];
+            popup_cc51f921b4094aae8adcac0af95e6472.setContent(html_4612b35a3e4240e98002914d3fd6db23);
+        
+
+        marker_f0027b5ab6bf4bea87de96c6618b5a43.bindPopup(popup_cc51f921b4094aae8adcac0af95e6472)
+        ;
+
+        
+    
+    
+            marker_f0027b5ab6bf4bea87de96c6618b5a43.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05e873f619d840a1a7b5e815daa2085f = L.marker(
+                [43.57111111, -85.97916667],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_fc051dce554b443fb37895f5c00c2235 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_05e873f619d840a1a7b5e815daa2085f.setIcon(icon_fc051dce554b443fb37895f5c00c2235);
+        
+    
+        var popup_cffc3df1c756499cad902974bf063d4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e3b9eb0985440bb9a3702aa34769044 = $(`<div id="html_2e3b9eb0985440bb9a3702aa34769044" style="width: 100.0%; height: 100.0%;">MI Debris Burning 10502</div>`)[0];
+            popup_cffc3df1c756499cad902974bf063d4c.setContent(html_2e3b9eb0985440bb9a3702aa34769044);
+        
+
+        marker_05e873f619d840a1a7b5e815daa2085f.bindPopup(popup_cffc3df1c756499cad902974bf063d4c)
+        ;
+
+        
+    
+    
+            marker_05e873f619d840a1a7b5e815daa2085f.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b9cf56094cd418cb208fc49f02f31fb = L.marker(
+                [60.05333333, -149.44],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_86af28d597fe43f2a46f2264d64c91ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1b9cf56094cd418cb208fc49f02f31fb.setIcon(icon_86af28d597fe43f2a46f2264d64c91ac);
+        
+    
+        var popup_c8afb4d79800428fbfbb1adc21920016 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b5bda9062ae4615a413bebf645d0089 = $(`<div id="html_1b5bda9062ae4615a413bebf645d0089" style="width: 100.0%; height: 100.0%;">AK Campfire 12843</div>`)[0];
+            popup_c8afb4d79800428fbfbb1adc21920016.setContent(html_1b5bda9062ae4615a413bebf645d0089);
+        
+
+        marker_1b9cf56094cd418cb208fc49f02f31fb.bindPopup(popup_c8afb4d79800428fbfbb1adc21920016)
+        ;
+
+        
+    
+    
+            marker_1b9cf56094cd418cb208fc49f02f31fb.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7aa739fc3c22447abce722d503d4444a = L.marker(
+                [44.36805556, -70.8125],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_bff2d9f01c184e3b824a5b9c36995f12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7aa739fc3c22447abce722d503d4444a.setIcon(icon_bff2d9f01c184e3b824a5b9c36995f12);
+        
+    
+        var popup_6fb6497e4c7944aaac4d37eacf8d6ed6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d1e230ec0744d888b3d1890a442c3b4 = $(`<div id="html_3d1e230ec0744d888b3d1890a442c3b4" style="width: 100.0%; height: 100.0%;">ME Debris Burning 13150</div>`)[0];
+            popup_6fb6497e4c7944aaac4d37eacf8d6ed6.setContent(html_3d1e230ec0744d888b3d1890a442c3b4);
+        
+
+        marker_7aa739fc3c22447abce722d503d4444a.bindPopup(popup_6fb6497e4c7944aaac4d37eacf8d6ed6)
+        ;
+
+        
+    
+    
+            marker_7aa739fc3c22447abce722d503d4444a.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8efe14547d94485f86265f3e3440fbfd = L.marker(
+                [42.35472222, -105.50555556],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_bd2d10094e4e4cacbd10bf1dc799bad1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8efe14547d94485f86265f3e3440fbfd.setIcon(icon_bd2d10094e4e4cacbd10bf1dc799bad1);
+        
+    
+        var popup_abcce3fd74b342718a905b924854695c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4269e3704e44a92b727b8826e59d67f = $(`<div id="html_c4269e3704e44a92b727b8826e59d67f" style="width: 100.0%; height: 100.0%;">WY Lightning 14166</div>`)[0];
+            popup_abcce3fd74b342718a905b924854695c.setContent(html_c4269e3704e44a92b727b8826e59d67f);
+        
+
+        marker_8efe14547d94485f86265f3e3440fbfd.bindPopup(popup_abcce3fd74b342718a905b924854695c)
+        ;
+
+        
+    
+    
+            marker_8efe14547d94485f86265f3e3440fbfd.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddf89fc5cd2d4ee3ae1edb19003209e7 = L.marker(
+                [46.45, -97.39444444],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_105186bae90e4cf8a3c1ce71def69200 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ddf89fc5cd2d4ee3ae1edb19003209e7.setIcon(icon_105186bae90e4cf8a3c1ce71def69200);
+        
+    
+        var popup_552a45d24e1b4973b9237e36d193848a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08e6685816d44093be9fb0ea8310b203 = $(`<div id="html_08e6685816d44093be9fb0ea8310b203" style="width: 100.0%; height: 100.0%;">ND Railroad 15201</div>`)[0];
+            popup_552a45d24e1b4973b9237e36d193848a.setContent(html_08e6685816d44093be9fb0ea8310b203);
+        
+
+        marker_ddf89fc5cd2d4ee3ae1edb19003209e7.bindPopup(popup_552a45d24e1b4973b9237e36d193848a)
+        ;
+
+        
+    
+    
+            marker_ddf89fc5cd2d4ee3ae1edb19003209e7.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15a2df6de041432a95a5c100cfcb8225 = L.marker(
+                [38.17916667, -118.71166667],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_780867e0b83d4ba1b93a2f3ae00084f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_15a2df6de041432a95a5c100cfcb8225.setIcon(icon_780867e0b83d4ba1b93a2f3ae00084f0);
+        
+    
+        var popup_c8f5effdc830404abbf53e6712915418 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8db762e795ab4d57acc7295cd26aebea = $(`<div id="html_8db762e795ab4d57acc7295cd26aebea" style="width: 100.0%; height: 100.0%;">NV Lightning 16956</div>`)[0];
+            popup_c8f5effdc830404abbf53e6712915418.setContent(html_8db762e795ab4d57acc7295cd26aebea);
+        
+
+        marker_15a2df6de041432a95a5c100cfcb8225.bindPopup(popup_c8f5effdc830404abbf53e6712915418)
+        ;
+
+        
+    
+    
+            marker_15a2df6de041432a95a5c100cfcb8225.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc3f358292534f8481e3af8db27115e4 = L.marker(
+                [37.65, -90.80083333],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_a4a62b7eea9b45b1bfc0f4a004e09f06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fc3f358292534f8481e3af8db27115e4.setIcon(icon_a4a62b7eea9b45b1bfc0f4a004e09f06);
+        
+    
+        var popup_63b717e6fb874a3b819c754a49c083d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2190923da2334905888fcc726814f623 = $(`<div id="html_2190923da2334905888fcc726814f623" style="width: 100.0%; height: 100.0%;">MO Arson 17953</div>`)[0];
+            popup_63b717e6fb874a3b819c754a49c083d2.setContent(html_2190923da2334905888fcc726814f623);
+        
+
+        marker_fc3f358292534f8481e3af8db27115e4.bindPopup(popup_63b717e6fb874a3b819c754a49c083d2)
+        ;
+
+        
+    
+    
+            marker_fc3f358292534f8481e3af8db27115e4.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70fbb1d44e1e468eacac9893a19eb775 = L.marker(
+                [38.55777778, -79.07166667],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_9de72dde93834e0f956af60f8de9bceb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_70fbb1d44e1e468eacac9893a19eb775.setIcon(icon_9de72dde93834e0f956af60f8de9bceb);
+        
+    
+        var popup_defd216911ef4d8ea9d52097ca1fef11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7b7ca10c1cb4989b2135276ca501128 = $(`<div id="html_f7b7ca10c1cb4989b2135276ca501128" style="width: 100.0%; height: 100.0%;">VA Arson 21833</div>`)[0];
+            popup_defd216911ef4d8ea9d52097ca1fef11.setContent(html_f7b7ca10c1cb4989b2135276ca501128);
+        
+
+        marker_70fbb1d44e1e468eacac9893a19eb775.bindPopup(popup_defd216911ef4d8ea9d52097ca1fef11)
+        ;
+
+        
+    
+    
+            marker_70fbb1d44e1e468eacac9893a19eb775.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0060f7a34754a819b6052ee15a81ddb = L.marker(
+                [38.34166667, -79.9625],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_5e34a97b3b2c48088e5df3c998fdf1e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e0060f7a34754a819b6052ee15a81ddb.setIcon(icon_5e34a97b3b2c48088e5df3c998fdf1e0);
+        
+    
+        var popup_ca2c65771b3740a0b482ad8c42b09fbc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_116b7e637cb34642a3aba55bf23f7ec5 = $(`<div id="html_116b7e637cb34642a3aba55bf23f7ec5" style="width: 100.0%; height: 100.0%;">WV Debris Burning 21967</div>`)[0];
+            popup_ca2c65771b3740a0b482ad8c42b09fbc.setContent(html_116b7e637cb34642a3aba55bf23f7ec5);
+        
+
+        marker_e0060f7a34754a819b6052ee15a81ddb.bindPopup(popup_ca2c65771b3740a0b482ad8c42b09fbc)
+        ;
+
+        
+    
+    
+            marker_e0060f7a34754a819b6052ee15a81ddb.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c89958e31c924828962c081153910e0a = L.marker(
+                [18.0, -67.1],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_3c6152848c4a401e80b5eb156024065f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c89958e31c924828962c081153910e0a.setIcon(icon_3c6152848c4a401e80b5eb156024065f);
+        
+    
+        var popup_46ba6000c98a4e8a8c50a95d8e25e388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbd08d6a74cf4db58fad359f8571fbd7 = $(`<div id="html_bbd08d6a74cf4db58fad359f8571fbd7" style="width: 100.0%; height: 100.0%;">PR Arson 22081</div>`)[0];
+            popup_46ba6000c98a4e8a8c50a95d8e25e388.setContent(html_bbd08d6a74cf4db58fad359f8571fbd7);
+        
+
+        marker_c89958e31c924828962c081153910e0a.bindPopup(popup_46ba6000c98a4e8a8c50a95d8e25e388)
+        ;
+
+        
+    
+    
+            marker_c89958e31c924828962c081153910e0a.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a02c57bd0c7048978503d0e3a8ee9854 = L.marker(
+                [40.764942, -74.535317],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_92d606c6a0d649ce959e5ffef77f45a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a02c57bd0c7048978503d0e3a8ee9854.setIcon(icon_92d606c6a0d649ce959e5ffef77f45a7);
+        
+    
+        var popup_946605a345464111bcac107a24eebfe8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_74a5a06fcb7a4e899b227ffd79d74739 = $(`<div id="html_74a5a06fcb7a4e899b227ffd79d74739" style="width: 100.0%; height: 100.0%;">NJ Smoking 25949</div>`)[0];
+            popup_946605a345464111bcac107a24eebfe8.setContent(html_74a5a06fcb7a4e899b227ffd79d74739);
+        
+
+        marker_a02c57bd0c7048978503d0e3a8ee9854.bindPopup(popup_946605a345464111bcac107a24eebfe8)
+        ;
+
+        
+    
+    
+            marker_a02c57bd0c7048978503d0e3a8ee9854.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b5751df2b9d4cbba8f215a497249f77 = L.marker(
+                [36.625, -84.20194444],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_fa0f792073e04f06beb717da825c8aad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b5751df2b9d4cbba8f215a497249f77.setIcon(icon_fa0f792073e04f06beb717da825c8aad);
+        
+    
+        var popup_e5d5d41ccbc5459b8b5d47a316ae471c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_38673ca9b8a94df595f66044bebe1a97 = $(`<div id="html_38673ca9b8a94df595f66044bebe1a97" style="width: 100.0%; height: 100.0%;">KY Arson 27089</div>`)[0];
+            popup_e5d5d41ccbc5459b8b5d47a316ae471c.setContent(html_38673ca9b8a94df595f66044bebe1a97);
+        
+
+        marker_0b5751df2b9d4cbba8f215a497249f77.bindPopup(popup_e5d5d41ccbc5459b8b5d47a316ae471c)
+        ;
+
+        
+    
+    
+            marker_0b5751df2b9d4cbba8f215a497249f77.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_868a8a1a063647aa9241ae58d3845dd5 = L.marker(
+                [30.95388889, -93.07166667],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_51b9f7c616b946a0bb41c4266f7f1788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_868a8a1a063647aa9241ae58d3845dd5.setIcon(icon_51b9f7c616b946a0bb41c4266f7f1788);
+        
+    
+        var popup_4ac04636923f4be983d0f00f4b254d47 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6650bbf3c8274da487169e2b7c7adc61 = $(`<div id="html_6650bbf3c8274da487169e2b7c7adc61" style="width: 100.0%; height: 100.0%;">LA Arson 30013</div>`)[0];
+            popup_4ac04636923f4be983d0f00f4b254d47.setContent(html_6650bbf3c8274da487169e2b7c7adc61);
+        
+
+        marker_868a8a1a063647aa9241ae58d3845dd5.bindPopup(popup_4ac04636923f4be983d0f00f4b254d47)
+        ;
+
+        
+    
+    
+            marker_868a8a1a063647aa9241ae58d3845dd5.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b42754bf6f4348f8863863e94df63aea = L.marker(
+                [40.08888889, -111.37833333],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_883de35db28546bf98a308791f9e3740 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b42754bf6f4348f8863863e94df63aea.setIcon(icon_883de35db28546bf98a308791f9e3740);
+        
+    
+        var popup_fd4f41178f6d419d8587808c016c6008 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_200d307f295f46f587a625134b6c3f40 = $(`<div id="html_200d307f295f46f587a625134b6c3f40" style="width: 100.0%; height: 100.0%;">UT Lightning 30725</div>`)[0];
+            popup_fd4f41178f6d419d8587808c016c6008.setContent(html_200d307f295f46f587a625134b6c3f40);
+        
+
+        marker_b42754bf6f4348f8863863e94df63aea.bindPopup(popup_fd4f41178f6d419d8587808c016c6008)
+        ;
+
+        
+    
+    
+            marker_b42754bf6f4348f8863863e94df63aea.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05d980187fa149fd9872fff7f86dfab9 = L.marker(
+                [44.01277778, -103.3825],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_60357290ef174eb0853ad258c30de77e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_05d980187fa149fd9872fff7f86dfab9.setIcon(icon_60357290ef174eb0853ad258c30de77e);
+        
+    
+        var popup_c045377e126641878e83da3b853b1677 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61c053ebe7754dbabcd60e15ea9f6dcd = $(`<div id="html_61c053ebe7754dbabcd60e15ea9f6dcd" style="width: 100.0%; height: 100.0%;">SD Campfire 30963</div>`)[0];
+            popup_c045377e126641878e83da3b853b1677.setContent(html_61c053ebe7754dbabcd60e15ea9f6dcd);
+        
+
+        marker_05d980187fa149fd9872fff7f86dfab9.bindPopup(popup_c045377e126641878e83da3b853b1677)
+        ;
+
+        
+    
+    
+            marker_05d980187fa149fd9872fff7f86dfab9.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82ee0304e6dd4c53990dd6eb4fddf810 = L.marker(
+                [36.46638889, -82.01],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_cf2aed42d5df454d9a326df7c26d4619 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_82ee0304e6dd4c53990dd6eb4fddf810.setIcon(icon_cf2aed42d5df454d9a326df7c26d4619);
+        
+    
+        var popup_15136fb762564d24a1bcf7f347928739 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2757dd7ec9e94e02a8e305b76edefebc = $(`<div id="html_2757dd7ec9e94e02a8e305b76edefebc" style="width: 100.0%; height: 100.0%;">TN Arson 31154</div>`)[0];
+            popup_15136fb762564d24a1bcf7f347928739.setContent(html_2757dd7ec9e94e02a8e305b76edefebc);
+        
+
+        marker_82ee0304e6dd4c53990dd6eb4fddf810.bindPopup(popup_15136fb762564d24a1bcf7f347928739)
+        ;
+
+        
+    
+    
+            marker_82ee0304e6dd4c53990dd6eb4fddf810.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f95322a163b4f029b36aee1ae57e524 = L.marker(
+                [34.65472222, -94.28638889],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_dd1b36069dd54d8085206ac6d39923bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9f95322a163b4f029b36aee1ae57e524.setIcon(icon_dd1b36069dd54d8085206ac6d39923bc);
+        
+    
+        var popup_1868ff2cecdc4ca0af66ef2686ae6888 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1fc55afb51b43c281011b2dc2165ae6 = $(`<div id="html_d1fc55afb51b43c281011b2dc2165ae6" style="width: 100.0%; height: 100.0%;">AR Miscellaneous 31663</div>`)[0];
+            popup_1868ff2cecdc4ca0af66ef2686ae6888.setContent(html_d1fc55afb51b43c281011b2dc2165ae6);
+        
+
+        marker_9f95322a163b4f029b36aee1ae57e524.bindPopup(popup_1868ff2cecdc4ca0af66ef2686ae6888)
+        ;
+
+        
+    
+    
+            marker_9f95322a163b4f029b36aee1ae57e524.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ace4aa2335b4eeaa7d39ca3ed1302b3 = L.marker(
+                [46.58777778, -91.08027778],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_9eb9fafc5c3440d286d73a671cf6bdcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9ace4aa2335b4eeaa7d39ca3ed1302b3.setIcon(icon_9eb9fafc5c3440d286d73a671cf6bdcb);
+        
+    
+        var popup_8acc5dbb73f54988b926a44b9ad38870 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd48df3552bf4766b0779c8ebfe0eec8 = $(`<div id="html_bd48df3552bf4766b0779c8ebfe0eec8" style="width: 100.0%; height: 100.0%;">WI Miscellaneous 31861</div>`)[0];
+            popup_8acc5dbb73f54988b926a44b9ad38870.setContent(html_bd48df3552bf4766b0779c8ebfe0eec8);
+        
+
+        marker_9ace4aa2335b4eeaa7d39ca3ed1302b3.bindPopup(popup_8acc5dbb73f54988b926a44b9ad38870)
+        ;
+
+        
+    
+    
+            marker_9ace4aa2335b4eeaa7d39ca3ed1302b3.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7173220170d45a38c505d9b99265bb2 = L.marker(
+                [46.22083333, -117.785],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_812afa2a59154a26a8ab54cbe6a25200 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d7173220170d45a38c505d9b99265bb2.setIcon(icon_812afa2a59154a26a8ab54cbe6a25200);
+        
+    
+        var popup_d31d8fce923b4ab29c21787afdca44c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51f5e322bd2a4e419aa68470d560db63 = $(`<div id="html_51f5e322bd2a4e419aa68470d560db63" style="width: 100.0%; height: 100.0%;">WA Lightning 33513</div>`)[0];
+            popup_d31d8fce923b4ab29c21787afdca44c2.setContent(html_51f5e322bd2a4e419aa68470d560db63);
+        
+
+        marker_d7173220170d45a38c505d9b99265bb2.bindPopup(popup_d31d8fce923b4ab29c21787afdca44c2)
+        ;
+
+        
+    
+    
+            marker_d7173220170d45a38c505d9b99265bb2.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_545f02f59c434aa4a9a08211c1faef24 = L.marker(
+                [39.29222222, -105.18305556],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_5c3c67c9a1ab4d248ecf2de0cc1db072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_545f02f59c434aa4a9a08211c1faef24.setIcon(icon_5c3c67c9a1ab4d248ecf2de0cc1db072);
+        
+    
+        var popup_0959cad0dfef4254ade4410fa2399671 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_508493b0871a4f43969835977fd31ab4 = $(`<div id="html_508493b0871a4f43969835977fd31ab4" style="width: 100.0%; height: 100.0%;">CO Lightning 34157</div>`)[0];
+            popup_0959cad0dfef4254ade4410fa2399671.setContent(html_508493b0871a4f43969835977fd31ab4);
+        
+
+        marker_545f02f59c434aa4a9a08211c1faef24.bindPopup(popup_0959cad0dfef4254ade4410fa2399671)
+        ;
+
+        
+    
+    
+            marker_545f02f59c434aa4a9a08211c1faef24.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6457fb43c9584a8b9e099aef6a6cc65a = L.marker(
+                [44.48861111, -111.25611111],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_8f65aac54a69426980306b3016ac0b43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6457fb43c9584a8b9e099aef6a6cc65a.setIcon(icon_8f65aac54a69426980306b3016ac0b43);
+        
+    
+        var popup_b1c5df81ea60460ca624506abc8ac904 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2efe7a5d2f164593aa37829398a03600 = $(`<div id="html_2efe7a5d2f164593aa37829398a03600" style="width: 100.0%; height: 100.0%;">ID Miscellaneous 36698</div>`)[0];
+            popup_b1c5df81ea60460ca624506abc8ac904.setContent(html_2efe7a5d2f164593aa37829398a03600);
+        
+
+        marker_6457fb43c9584a8b9e099aef6a6cc65a.bindPopup(popup_b1c5df81ea60460ca624506abc8ac904)
+        ;
+
+        
+    
+    
+            marker_6457fb43c9584a8b9e099aef6a6cc65a.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32ddcf9ad1ac4c64b4294244d2b5dac2 = L.marker(
+                [33.44083333, -105.72055556],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_2d51501c0e4e4140821cd91e1e332b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_32ddcf9ad1ac4c64b4294244d2b5dac2.setIcon(icon_2d51501c0e4e4140821cd91e1e332b53);
+        
+    
+        var popup_bde84ddf3c1c449ca9d7163a914ac7f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_073cc3f4e411461d99d3bbd0c9907384 = $(`<div id="html_073cc3f4e411461d99d3bbd0c9907384" style="width: 100.0%; height: 100.0%;">NM Lightning 37478</div>`)[0];
+            popup_bde84ddf3c1c449ca9d7163a914ac7f1.setContent(html_073cc3f4e411461d99d3bbd0c9907384);
+        
+
+        marker_32ddcf9ad1ac4c64b4294244d2b5dac2.bindPopup(popup_bde84ddf3c1c449ca9d7163a914ac7f1)
+        ;
+
+        
+    
+    
+            marker_32ddcf9ad1ac4c64b4294244d2b5dac2.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51f211256d6347ad906201d72fc5726c = L.marker(
+                [48.92194444, -115.0925],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_6da7bc8386f74712a393df860ea2bcd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_51f211256d6347ad906201d72fc5726c.setIcon(icon_6da7bc8386f74712a393df860ea2bcd2);
+        
+    
+        var popup_9cb509266e5a4eb4a9cd31db8b852f84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d618f55b48ff4f6f87b04cf7e065beb4 = $(`<div id="html_d618f55b48ff4f6f87b04cf7e065beb4" style="width: 100.0%; height: 100.0%;">MT Debris Burning 40767</div>`)[0];
+            popup_9cb509266e5a4eb4a9cd31db8b852f84.setContent(html_d618f55b48ff4f6f87b04cf7e065beb4);
+        
+
+        marker_51f211256d6347ad906201d72fc5726c.bindPopup(popup_9cb509266e5a4eb4a9cd31db8b852f84)
+        ;
+
+        
+    
+    
+            marker_51f211256d6347ad906201d72fc5726c.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_636722870428415f8f815ccd03db786d = L.marker(
+                [35.59583333, -100.01305556],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_eeb5c91d6e254cd6a1c1a0ad80857930 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_636722870428415f8f815ccd03db786d.setIcon(icon_eeb5c91d6e254cd6a1c1a0ad80857930);
+        
+    
+        var popup_944673d6bd5a49d494dec8be6eb937ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a223af44cf174614b6ef1031b15c501a = $(`<div id="html_a223af44cf174614b6ef1031b15c501a" style="width: 100.0%; height: 100.0%;">OK Miscellaneous 43239</div>`)[0];
+            popup_944673d6bd5a49d494dec8be6eb937ce.setContent(html_a223af44cf174614b6ef1031b15c501a);
+        
+
+        marker_636722870428415f8f815ccd03db786d.bindPopup(popup_944673d6bd5a49d494dec8be6eb937ce)
+        ;
+
+        
+    
+    
+            marker_636722870428415f8f815ccd03db786d.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4941a429ae840c2acb61919b4bcd606 = L.marker(
+                [48.05944444, -90.3375],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_ac294f071cd047c7b3d378423f61d6bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c4941a429ae840c2acb61919b4bcd606.setIcon(icon_ac294f071cd047c7b3d378423f61d6bf);
+        
+    
+        var popup_f05c9231b4364608bf3e3c54afe1d387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30cdac3841204c87baddb9b84ef7de99 = $(`<div id="html_30cdac3841204c87baddb9b84ef7de99" style="width: 100.0%; height: 100.0%;">MN Campfire 44769</div>`)[0];
+            popup_f05c9231b4364608bf3e3c54afe1d387.setContent(html_30cdac3841204c87baddb9b84ef7de99);
+        
+
+        marker_c4941a429ae840c2acb61919b4bcd606.bindPopup(popup_f05c9231b4364608bf3e3c54afe1d387)
+        ;
+
+        
+    
+    
+            marker_c4941a429ae840c2acb61919b4bcd606.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a62d7cf38f3472697e0cae1a155adfe = L.marker(
+                [43.99555556, -121.41416667],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_30f185110f184111ac10827fce303913 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3a62d7cf38f3472697e0cae1a155adfe.setIcon(icon_30f185110f184111ac10827fce303913);
+        
+    
+        var popup_a59f71ef5a774acc99e22b3aeef209b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcaee73283f84b37869b622b2905b66e = $(`<div id="html_dcaee73283f84b37869b622b2905b66e" style="width: 100.0%; height: 100.0%;">OR Campfire 61088</div>`)[0];
+            popup_a59f71ef5a774acc99e22b3aeef209b7.setContent(html_dcaee73283f84b37869b622b2905b66e);
+        
+
+        marker_3a62d7cf38f3472697e0cae1a155adfe.bindPopup(popup_a59f71ef5a774acc99e22b3aeef209b7)
+        ;
+
+        
+    
+    
+            marker_3a62d7cf38f3472697e0cae1a155adfe.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4215b10f7f28489fa88f1480fd6ce35b = L.marker(
+                [34.10944444, -87.375],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_c154450701224533933fd050fb794acd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4215b10f7f28489fa88f1480fd6ce35b.setIcon(icon_c154450701224533933fd050fb794acd);
+        
+    
+        var popup_ab35043e8fd042538a446bf1c3e6e0ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_618e4942d8cb41daa7fb3b21065b0967 = $(`<div id="html_618e4942d8cb41daa7fb3b21065b0967" style="width: 100.0%; height: 100.0%;">AL Arson 66570</div>`)[0];
+            popup_ab35043e8fd042538a446bf1c3e6e0ed.setContent(html_618e4942d8cb41daa7fb3b21065b0967);
+        
+
+        marker_4215b10f7f28489fa88f1480fd6ce35b.bindPopup(popup_ab35043e8fd042538a446bf1c3e6e0ed)
+        ;
+
+        
+    
+    
+            marker_4215b10f7f28489fa88f1480fd6ce35b.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a844f4452d974100b17a4c70fad06bc1 = L.marker(
+                [35.23638889, -112.21638889],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_bd876f409d5041e18df10766dbf6b700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a844f4452d974100b17a4c70fad06bc1.setIcon(icon_bd876f409d5041e18df10766dbf6b700);
+        
+    
+        var popup_ec1e4360c44e43e986c725e81f5b054c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a124c0f05c164e9ea6e9cf65ab79324e = $(`<div id="html_a124c0f05c164e9ea6e9cf65ab79324e" style="width: 100.0%; height: 100.0%;">AZ Campfire 71586</div>`)[0];
+            popup_ec1e4360c44e43e986c725e81f5b054c.setContent(html_a124c0f05c164e9ea6e9cf65ab79324e);
+        
+
+        marker_a844f4452d974100b17a4c70fad06bc1.bindPopup(popup_ec1e4360c44e43e986c725e81f5b054c)
+        ;
+
+        
+    
+    
+            marker_a844f4452d974100b17a4c70fad06bc1.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d9b5ea10d4b4b6cb9509418196a3575 = L.marker(
+                [31.06833333, -89.09916667],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_57aa94d02563432a845699a1f7c8fe52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1d9b5ea10d4b4b6cb9509418196a3575.setIcon(icon_57aa94d02563432a845699a1f7c8fe52);
+        
+    
+        var popup_c9eefb3591f7459db1b1aa73633e2a39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dbc6ac3f614b49f89e745e55ca63c532 = $(`<div id="html_dbc6ac3f614b49f89e745e55ca63c532" style="width: 100.0%; height: 100.0%;">MS Arson 79230</div>`)[0];
+            popup_c9eefb3591f7459db1b1aa73633e2a39.setContent(html_dbc6ac3f614b49f89e745e55ca63c532);
+        
+
+        marker_1d9b5ea10d4b4b6cb9509418196a3575.bindPopup(popup_c9eefb3591f7459db1b1aa73633e2a39)
+        ;
+
+        
+    
+    
+            marker_1d9b5ea10d4b4b6cb9509418196a3575.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18ca990044d54f4baddf8ec0493e9c4d = L.marker(
+                [42.53333333, -76.73333333],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_58b07e5d5e1f4466b544ac0761cb0d53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_18ca990044d54f4baddf8ec0493e9c4d.setIcon(icon_58b07e5d5e1f4466b544ac0761cb0d53);
+        
+    
+        var popup_778f378f850c42d596a4ca81f6af6c6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7698c282427c4a50987fdbe51c40cb6b = $(`<div id="html_7698c282427c4a50987fdbe51c40cb6b" style="width: 100.0%; height: 100.0%;">NY Smoking 80870</div>`)[0];
+            popup_778f378f850c42d596a4ca81f6af6c6f.setContent(html_7698c282427c4a50987fdbe51c40cb6b);
+        
+
+        marker_18ca990044d54f4baddf8ec0493e9c4d.bindPopup(popup_778f378f850c42d596a4ca81f6af6c6f)
+        ;
+
+        
+    
+    
+            marker_18ca990044d54f4baddf8ec0493e9c4d.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cc01c94335f4988975de41eed5f883a = L.marker(
+                [34.41916667, -81.57805556],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_8d52e8ab01444e138c57edf11b75b897 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3cc01c94335f4988975de41eed5f883a.setIcon(icon_8d52e8ab01444e138c57edf11b75b897);
+        
+    
+        var popup_70b493c0001c49b8bb3cb508f1621660 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_155225f73fcc4cd4a9e3cd6ece945d89 = $(`<div id="html_155225f73fcc4cd4a9e3cd6ece945d89" style="width: 100.0%; height: 100.0%;">SC Miscellaneous 81315</div>`)[0];
+            popup_70b493c0001c49b8bb3cb508f1621660.setContent(html_155225f73fcc4cd4a9e3cd6ece945d89);
+        
+
+        marker_3cc01c94335f4988975de41eed5f883a.bindPopup(popup_70b493c0001c49b8bb3cb508f1621660)
+        ;
+
+        
+    
+    
+            marker_3cc01c94335f4988975de41eed5f883a.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e69ae94805004ea1a6bfe1243a1a7304 = L.marker(
+                [29.18805556, -81.88861111],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_86ac4edb0fc2456d902c02981d36b75a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e69ae94805004ea1a6bfe1243a1a7304.setIcon(icon_86ac4edb0fc2456d902c02981d36b75a);
+        
+    
+        var popup_a0a376e4fc0b4defa8b5c6d6e7dfcdc1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51df395e30b54153ac68659455d567be = $(`<div id="html_51df395e30b54153ac68659455d567be" style="width: 100.0%; height: 100.0%;">FL Miscellaneous 90261</div>`)[0];
+            popup_a0a376e4fc0b4defa8b5c6d6e7dfcdc1.setContent(html_51df395e30b54153ac68659455d567be);
+        
+
+        marker_e69ae94805004ea1a6bfe1243a1a7304.bindPopup(popup_a0a376e4fc0b4defa8b5c6d6e7dfcdc1)
+        ;
+
+        
+    
+    
+            marker_e69ae94805004ea1a6bfe1243a1a7304.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f22343dba044c5299650d0af97f28a5 = L.marker(
+                [35.22833333, -82.88444444],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_d56b28e3b0494c638b42bfa247201c89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2f22343dba044c5299650d0af97f28a5.setIcon(icon_d56b28e3b0494c638b42bfa247201c89);
+        
+    
+        var popup_c5afb9b280bc4ad8bc0776a6c52bbc18 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20a7c57c5437442d8cc8fe270d8fdbff = $(`<div id="html_20a7c57c5437442d8cc8fe270d8fdbff" style="width: 100.0%; height: 100.0%;">NC Equipment Use 111277</div>`)[0];
+            popup_c5afb9b280bc4ad8bc0776a6c52bbc18.setContent(html_20a7c57c5437442d8cc8fe270d8fdbff);
+        
+
+        marker_2f22343dba044c5299650d0af97f28a5.bindPopup(popup_c5afb9b280bc4ad8bc0776a6c52bbc18)
+        ;
+
+        
+    
+    
+            marker_2f22343dba044c5299650d0af97f28a5.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_204639d842fd46da8e4fa13b00361763 = L.marker(
+                [33.78611111, -96.15],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_01270682c20243d389f7af1e856b9fae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_204639d842fd46da8e4fa13b00361763.setIcon(icon_01270682c20243d389f7af1e856b9fae);
+        
+    
+        var popup_76cde45024b54ebeb9c6f24026d062b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_726c30977e27418c8bc59f34b53cb87e = $(`<div id="html_726c30977e27418c8bc59f34b53cb87e" style="width: 100.0%; height: 100.0%;">TX Arson 142021</div>`)[0];
+            popup_76cde45024b54ebeb9c6f24026d062b4.setContent(html_726c30977e27418c8bc59f34b53cb87e);
+        
+
+        marker_204639d842fd46da8e4fa13b00361763.bindPopup(popup_76cde45024b54ebeb9c6f24026d062b4)
+        ;
+
+        
+    
+    
+            marker_204639d842fd46da8e4fa13b00361763.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa3f1836b85f4d85aa0bdb1c040af691 = L.marker(
+                [34.89555556, -84.67583333],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_88d10d622e894b1d87eb63d53c0e3631 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fa3f1836b85f4d85aa0bdb1c040af691.setIcon(icon_88d10d622e894b1d87eb63d53c0e3631);
+        
+    
+        var popup_7fc74f0c13384046bbd7a07834abb92e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_928d21cf70cc4cb1bc2e159579dca272 = $(`<div id="html_928d21cf70cc4cb1bc2e159579dca272" style="width: 100.0%; height: 100.0%;">GA Arson 168867</div>`)[0];
+            popup_7fc74f0c13384046bbd7a07834abb92e.setContent(html_928d21cf70cc4cb1bc2e159579dca272);
+        
+
+        marker_fa3f1836b85f4d85aa0bdb1c040af691.bindPopup(popup_7fc74f0c13384046bbd7a07834abb92e)
+        ;
+
+        
+    
+    
+            marker_fa3f1836b85f4d85aa0bdb1c040af691.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a42bcf20cca54fe0a2322a2cdc6a49c4 = L.marker(
+                [40.03694444, -121.00583333],
+                {}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var icon_8ccfbf01bc87482c8758503d35c0b82a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a42bcf20cca54fe0a2322a2cdc6a49c4.setIcon(icon_8ccfbf01bc87482c8758503d35c0b82a);
+        
+    
+        var popup_2770070e16814af7850613f28b32e69d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6c1bbe84015465f8d3f6e662cc82c81 = $(`<div id="html_a6c1bbe84015465f8d3f6e662cc82c81" style="width: 100.0%; height: 100.0%;">CA Miscellaneous 189550</div>`)[0];
+            popup_2770070e16814af7850613f28b32e69d.setContent(html_a6c1bbe84015465f8d3f6e662cc82c81);
+        
+
+        marker_a42bcf20cca54fe0a2322a2cdc6a49c4.bindPopup(popup_2770070e16814af7850613f28b32e69d)
+        ;
+
+        
+    
+    
+            marker_a42bcf20cca54fe0a2322a2cdc6a49c4.bindTooltip(
+                `<div>
+                     click
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_e7d8e6046d69440bb0b33e577fe82564 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var tile_layer_986a699aaf0a4790be39028bdc19b81f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var tile_layer_2e9182c926af4a7db19c2f8307588bd3 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var tile_layer_e9a9fa3194014855ae7420f2dc45a9ae = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var tile_layer_b0dd848215cf41468079084ed509ac78 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+        
+    
+            var layer_control_825eef1b6549487c997fcec6e935f4c4 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_8814e942155f4801aa129e96c8428a69,
+                    "stamenterrain" : tile_layer_e7d8e6046d69440bb0b33e577fe82564,
+                    "stamentoner" : tile_layer_986a699aaf0a4790be39028bdc19b81f,
+                    "stamenwatercolor" : tile_layer_2e9182c926af4a7db19c2f8307588bd3,
+                    "cartodbpositron" : tile_layer_e9a9fa3194014855ae7420f2dc45a9ae,
+                    "cartodbdark_matter" : tile_layer_b0dd848215cf41468079084ed509ac78,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_825eef1b6549487c997fcec6e935f4c4.base_layers,
+                layer_control_825eef1b6549487c997fcec6e935f4c4.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_e935a4b0e89946a0868f582e702e86b1);
+            tile_layer_e7d8e6046d69440bb0b33e577fe82564.remove();
+            tile_layer_986a699aaf0a4790be39028bdc19b81f.remove();
+            tile_layer_2e9182c926af4a7db19c2f8307588bd3.remove();
+            tile_layer_e9a9fa3194014855ae7420f2dc45a9ae.remove();
+            tile_layer_b0dd848215cf41468079084ed509ac78.remove();
+        
+</script>
