@@ -22,8 +22,8 @@ def welcome():
 @app.route('/totalStateFires')
 #query for causes and total count of fires
 def total_fires():
-    engine = create_engine("sqlite:///Resources/wildfires.sqlite")
-    conn = lite.connect('Resources/wildfires.sqlite')
+    engine = create_engine("sqlite:///Resources/FPA_FOD_20170508.sqlite")
+    conn = lite.connect('Resources/FPA_FOD_20170508.sqlite')
     total_query = 'select STATE, SUM(FIRE_YEAR) as "Total Fires", AVG(FIRE_SIZE) as "Average Size" from Fires group by State order by "Total Fires" desc;'
     total_fires_df = pd.read_sql_query(total_query,conn)
     total_fires_ranked = {
@@ -34,9 +34,9 @@ def total_fires():
     conn.close()
     return jsonify(total_fires_ranked)
 
-@app.route('/causes_map')
+@app.route('/all_wildfires_map')
 def causes_map():
-    return render_template('causes_map.html')
+    return render_template('all_wildfires.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
