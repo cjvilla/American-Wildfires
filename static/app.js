@@ -18,16 +18,14 @@ d3.json(url).then(function(response){
         type: 'bar',
         x: fireSize,
         y: fireCause,
-        name: 'firecause',
+        name: 'Fire Size (acres)',
         orientation: 'h',
+        width: 0.5,
         marker: {
             color:'rgb(255,127,80)',
-            opacity: 0.6,
-            width: 5,
-            line: {
-            color: 'rgb(255,69,0)',
-            width: 1.5
-            }}
+            opacity: 1,
+            width: 0.5,
+        }
             
     };
 
@@ -35,36 +33,41 @@ d3.json(url).then(function(response){
         type: 'bar',
         x: burnTime,
         y: fireCause,
-        name: 'burntime',
+        name: 'Burn Time (days)',
         xaxis: 'x2',
         orientation: 'h',
+        width: 1,
         marker: {
             color:'rgb(255,215,0)',
-            opacity: 0.6,
-            width: 0.5,
-            line: {
-            color: 'rgb(255,69,0)',
-            width: 1.5
-            }}
+            opacity: 0.3,
+            width: 1,
+        }
             
     };
     
-    var data = [trace2,trace1];
+    var data = [trace1,trace2];
 
     var layout = {
-        title: "Causes by Fire Size and Burn Time",
+        title: {
+        text:"Causes by Fire Size and Burn Time",
+        font:{
+            size: 12
+        }},
         xaxis: {
             title: 'Avg Fire Size (Acres)',
-            side: 'bottom'
+            overlaying: 'x2',
+            side: 'top'
         },
         xaxis2: {
             title: 'Avg Burn Time',
-            overlaying: 'x',
-            side: 'top'
+            side: 'bottom'
+        },
+        font: {
+            size: 9
         }
     };
 
-Plotly.newPlot('plot',data,layout);
+Plotly.newPlot('barplot',data,layout);
 
 var donutcolors = ["rgb(255,153,102)","rgb(233,105,44)",
 "rgb(255,69,0)","rgb(255,140,0)","rgb(255,127,80)","rgb(255,143,0)",
@@ -99,7 +102,7 @@ var layout = {
     grid: {rows: 1, columns: 2}
 }
 var donut = [trace]
-Plotly.newPlot('plot2', donut,layout);
+Plotly.newPlot('donutplot', donut,layout);
 });
 }
 init();
