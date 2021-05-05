@@ -34,9 +34,13 @@ def total_fires():
     conn.close()
     return jsonify(total_fires_ranked)
 
-@app.route('/all_wildfires_map')
+@app.route('/bubble_map')
 def causes_map():
     return render_template('all_wildfires.html')
+
+@app.route('/choropleth_map')
+def evolution_map():
+    return render_template('choropleth_map.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
