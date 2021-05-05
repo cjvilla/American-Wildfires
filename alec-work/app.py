@@ -9,10 +9,10 @@ def welcome():
     # add in data variables here
     return render_template("index_am.html")
 
-@app.route("/Chart")
+@app.route("/Map")
 def chartTest():
     # add in data variables here
-    return render_template("chart.html")
+    return render_template("map.html")
 
 @app.route("/YearlyDataState")
 def yearlyState():
@@ -23,6 +23,23 @@ def yearlyState():
     json_parsed = json.loads(result)
     return json_parsed
 
+@app.route("/top20")
+def top20():
+    csv_path = "output/top_20_fires.csv"
+    top_20_df = pd.read_csv(csv_path)
+    top_20_load_df = top_20_df[["DISCOVERY_DATE","STATE","FIRE_NAME","STAT_CAUSE_DESCR","FIRE_SIZE"]]
+    top_20_load_df_ind = top_20_load_df.set_index("FIRE_NAME")
+    result_load = top_20_load_df_ind.to_json(orient="table")
+    json_parsed_load = json.loads(result_load)
+    return json_parsed_load
+
+@app.route("/top20Map")
+def top20Map():
+    csv_path = "output/top_20_fires.csv"
+    top_20_df = pd.read_csv(csv_path)
+    result = top_20_df.to_json(orient="table")
+    json_parsed = json.loads(result)
+    return json_parsed
 
 @app.route("/YearlyDataAll")
 def yearly():
