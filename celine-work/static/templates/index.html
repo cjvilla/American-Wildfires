@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wild Fires</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Exploration of Wildfires in the US (1992-2015)</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div id="chart"></div>
+      </div>
+      <div class="col-md-5">
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+ <strong><h1>About</h1></strong> 
+<p>asdfasdfasdf asdfasdf asdf asdf asdf asdf asdf asdf asdf asdf blah blah blah.</p>
+
+<strong><h1>Wildfires By Region</h1></strong>
+  <h2>Interactive Maps</h2>
+    <p>Click on each button below to view the interactive Wildfire maps.</p>
+      <a class="btn btn-primary" href="/bubble_map" role="button">Bubble Map of All Individual Wildfires</a>
+      <a class="btn btn-primary" href="/choropleth_map" role="button">Choropleth Map of U.S. Wildfires Per State Acreage</a>
+      <a class="btn btn-primary" href="/heatmap" role="button">Heatmap of Wildfires Over Time</a>
+  <h2>Total Wildfires and Average Burn Size</h2>
+    <p>Click on the individual labels in the legend to view Total Wildfires and Average Size seperately. However over each bar for individual state data</p>
+      <div id="bar_graph"></div>
+  <h2>Top Wildfires States Over Time and Their Wildfire Seasons</h2>
+      <img src="../static/Images/Alaska.png" alt="Alaska" width="45%" height="auto">
+      <img src="../static/Images/California.png" alt="California" width="45%" height="auto">
+      <img src="../static/Images/Florida.png" alt="Florida" width="45%" height="auto">
+      <img src="../static/Images/Georgia.png" alt="Georgia" width="45%" height="auto">
+      <img src="../static/Images/North Carolina.png" alt="North Carolina" width="45%" height="auto">
+      <img src="../static/Images/Texas.png" alt="Texas" width="45%" height="auto">
+
+  <div id='footer'>
+    <p>&copy; 2021 Alec Miller, Julie Wells, Celine Villareal </p>
+  </div>
+  
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript" src="../static/js/app1.js"></script>
+
+
+</body>
+
+</html>
