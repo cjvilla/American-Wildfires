@@ -10,9 +10,10 @@
   <p>Contents of File</p>
     <ul>
       <li>26 tables</li>
-      <li>Includes 1.88 million geo-referenced wildfire records among all U.S. states and Puerto Rico</li>
-      <li>Data represents total of 140 million acres burned during the 24 year period</li>
       <li>A shape file of the individual wildfires and their boundaries</li>
       <li>Cause, date, origin, duration, and location of wildfires</li>
       <li>Wildfire reporting agencies</li>
     </ul>
+
+<h1> Data Abstraction </h1>
+  <p>.sqlite file was loaded into our .py files by using the SQLite and SQLAlchemy modules. These modules allow you to store data in a single file without the need for a database server. In addition, they allow you to create views and queries by connecting the SQLAlchemy engine. Null and empty rows were dropped. Data from the .sqlite file was transformed into dataframes</p>
