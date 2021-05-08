@@ -1,10 +1,41 @@
 body {
     padding: 25;
     margin: 25;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
   
 #map,
 body,
 html {
     height: 100%;
+}
+
+h1 {
+    color:tomato;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    color: RGB(247, 135, 2);
+    font-style: italic;
+
+}
+
+.btn-primary {
+    background-color:tomato;
+    color: white;
+    border-color: white;
+}
+
+.btn-primary:hover {
+    background-color:
+    RGB(255,126,71);
+    color: white;
+    border-color: white;
+}
+
+h3 { color: gray;
+    font-size: large;
+    font-style: italic;
+
 }

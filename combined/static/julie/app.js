@@ -48,11 +48,6 @@ d3.json(url).then(function(response){
     var data = [trace1,trace2];
 
     var layout = {
-        title: {
-        text:"Causes by Fire Size and Burn Time",
-        font:{
-            size: 12
-        }},
         xaxis: {
             title: 'Avg Fire Size (Acres)',
             overlaying: 'x2',
@@ -88,10 +83,6 @@ trace = {
 }
 
 var layout = {
-    title: "Fire Count by Cause Type",
-    font:{
-        size:8
-    },
     showarrow: false,
     text: 'Count',
     x: 0.17,
